@@ -1,5 +1,4 @@
 "use client";
-
 export default function ContactSection() {
   return (
     <section
@@ -77,7 +76,7 @@ export default function ContactSection() {
           <img
             src="/Contactus.png"
             alt="Contact Illustration"
-            className="hidden lg:block w-full max-w-2xl h-[480px] rounded-2xl shadow-lg object-cover"
+            className="hidden lg:block w-full max-w-2xl h-[580px] rounded-2xl shadow-lg object-cover mt-[-190px]"
           />
         </div>
       </div>
