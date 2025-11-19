@@ -196,9 +196,9 @@ export default function HomeSection() {
         </div>
 
         {/* RIGHT SIDE — IMAGE (Perfect Circle) */}
-        <div className="relative w-[260px] h-[260px] lg:w-[360px] lg:h-[360px] mx-auto lg:mx-0 rounded-full overflow-hidden">
+        <div className="relative w-[220px] h-[220px] lg:w-[360px] lg:h-[360px] mx-auto lg:mx-0 rounded-full overflow-hidden">
           <Image
-            src="/Homeimg.png"
+            src="/zohaib1.png"
             alt="About me"
             fill
             priority
