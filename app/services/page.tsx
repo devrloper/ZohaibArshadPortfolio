@@ -80,7 +80,7 @@ export default function ServicesSection() {
 
         {/* Title */}
         <h1 className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-extrabold 
-        text-gray-800/20 leading-none mb-6 text-center">
+        text-gray-600 leading-none mb-6 text-center">
           SERVICES
         </h1>
 

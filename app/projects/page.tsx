@@ -106,7 +106,7 @@ export default function ProjectsSection() {
         {/* Heading */}
         <h1
           className="text-[3rem] sm:text-[4rem] lg:text-[6rem] font-extrabold
-        text-gray-800/20 leading-none mb-4 text-center"
+        text-gray-600 leading-none mb-4 text-center"
         >
           PROJECTS
         </h1>
@@ -152,7 +152,7 @@ export default function ProjectsSection() {
             {/* Close Button */}
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute top-2 right-2 text-gray-400 hover:text-green-400 text-2xl"
+              className="absolute top-2 right-2 text-gray-400 hover:text-green-400 text-2xl cursor-pointer"
             >
               ✕
             </button>

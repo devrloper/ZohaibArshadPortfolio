@@ -10,9 +10,6 @@ import {
   PhoneCall,
   Mail,
   Github,
-  Facebook,
-  Instagram,
-  Linkedin,
   Menu,
   X,
   Cpu,
@@ -49,9 +46,19 @@ export default function Sidebar() {
     },
   ];
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault(); // prevent default jump
+    setIsOpen(false);   // close sidebar on mobile
+
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-      {/*TOGGLE BUTTON*/}
+      {/* TOGGLE BUTTON */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed top-5 right-5 z-50 bg-green-600 text-white p-2 rounded-md lg:hidden"
@@ -80,9 +87,9 @@ export default function Sidebar() {
               <div key={index} className="relative group">
                 <Link
                   href={item.href}
-                  className="hover:text-green-500 flex items-center justify-center transition-colors duration-200"
                   aria-label={item.label}
-                  onClick={() => setIsOpen(false)} // close on click
+                  className="hover:text-green-500 flex items-center justify-center transition-colors duration-200"
+                  onClick={(e) => handleScroll(e, item.href)}
                 >
                   {item.icon}
                 </Link>
@@ -113,9 +120,9 @@ export default function Sidebar() {
                 {item.icon}
               </Link>
 
-              {/* Tooltip (Desktop only) */}
+              {/* Tooltip */}
               <span
-                className="absolute left-full ml-3 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 
+                className="absolute left-full mt-[-35] ml-3 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 
                 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 whitespace-nowrap hidden lg:block"
               >
                 {item.label}
@@ -125,7 +132,7 @@ export default function Sidebar() {
         </div>
       </aside>
 
-      {/* BACKDROP (for Mobile + Tablet)*/}
+      {/* BACKDROP (Mobile + Tablet) */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-30 lg:hidden"

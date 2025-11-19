@@ -11,12 +11,15 @@ import Contact from "./contact/page";
 import { Download, Github, MessageCircle, Phone } from "lucide-react";
 import {
   IoLogoJavascript,
+
   IoLogoReact,
   IoLogoNodejs,
   IoLogoVue,
   IoCloudOutline,
   IoServerOutline,
 } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si"; 
+
 
 export default function HomeSection() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -90,7 +93,7 @@ export default function HomeSection() {
       title: "JavaScript",
       icon: IoLogoJavascript,
     },
-    { title: "TypeScript", icon: IoLogoJavascript },
+    { title: "TypeScript", icon: SiTypescript  },
     { title: "React / NextJS", icon: IoLogoReact },
     { title: "Vue / Nuxt", icon: IoLogoVue },
     { title: "Cloud Services", icon: IoCloudOutline },
@@ -151,7 +154,7 @@ export default function HomeSection() {
       >
         {/* LEFT SIDE — TEXT */}
         <div className="lg:w-[60%] mt-10 lg:mt-0 lg:pr-20 lg:ml-14">
-          <h1 className="text-5xl font-extrabold text-gray-800/20 mb-6">
+          <h1 className="text-5xl font-extrabold text-gray-600 mb-6">
             ABOUT ME
           </h1>
 
@@ -176,22 +179,35 @@ export default function HomeSection() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mb-10">
-            <button className="flex items-center gap-2 bg-gray-700 hover:bg-green-500 px-5 py-3 rounded-2xl transition cursor-pointer">
+            {/* <button className="flex items-center gap-2 bg-gray-700 hover:bg-green-500 px-5 py-3 rounded-2xl transition cursor-pointer">
               <Download className="w-5 h-5" />
               Download CV
-            </button>
+            </button> */}
 
-            <button className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer">
+            <a
+              href="https://github.com/ZohaibArshad12/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer inline-flex"
+            >
               <Github className="w-5 h-5" />
-            </button>
+            </a>
 
-            <button className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer">
+            <a
+              href="zohaibarshad2237@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer inline-flex"
+            >
               <MessageCircle className="w-5 h-5" />
-            </button>
+            </a>
 
-            <button className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer">
+            <a
+              href="tel: +92 323 4424756"
+              className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer inline-flex"
+            >
               <Phone className="w-5 h-5" />
-            </button>
+            </a>
           </div>
         </div>
 
@@ -212,7 +228,7 @@ export default function HomeSection() {
         id="tech"
         className="min-h-screen bg-[#0d0f13] text-white px-6 lg:px-20 py-20"
       >
-        <h2 className="text-green-500 font-bold text-5xl mb-12 text-center">
+        <h2 className="text-gray-600 font-extrabold text-5xl mb-12 text-center">
           Tech Stack
         </h2>
 
@@ -227,7 +243,7 @@ export default function HomeSection() {
           </div>
 
           {/* RIGHT SIDE CONTENT */}
-          <div className="flex flex-col items-center lg:items-start   cursor-pointer">
+          <div className="flex flex-col items-center lg:items-start ">
             <h3 className="text-3xl font-bold text-green-400 mb-8">
               Technologies I Use
             </h3>
@@ -236,18 +252,21 @@ export default function HomeSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
               {techList.map((tech, i) => {
                 const Icon = tech.icon;
+
                 return (
                   <div
                     key={i}
-                    className="flex flex-col sm:flex-row items-center lg:items-start gap-4 hover:text-green-400 transition-all"
+                    className="flex flex-col sm:flex-row items-center gap-4 hover:text-green-400 transition-all"
                   >
                     {/* ICON */}
                     <Icon className="w-12 h-12 text-green-400 transition" />
 
                     {/* TEXT */}
-                    <div className="text-center lg:text-left">
+                    <div className="flex flex-col justify-center text-center lg:text-left">
                       <h4 className="text-gray-400 font-semibold text-lg">
-                        {tech.title}
+                        {tech.title === "JavaScript"
+                          ? "TypeScript"
+                          : tech.title}
                       </h4>
                     </div>
                   </div>

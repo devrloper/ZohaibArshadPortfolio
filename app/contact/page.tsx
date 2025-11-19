@@ -6,7 +6,7 @@ export default function ContactSection() {
       className="relative min-h-screen bg-[#0f1115] text-white px-6 sm:px-10 lg:px-20 py-20"
     >
       {/* CONTACT HEADING AT THE TOP */}
-      <h1 className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-extrabold text-gray-800/20 leading-none mb-12 text-center">
+      <h1 className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-extrabold text-gray-600 leading-none mb-12 text-center">
         CONTACT
       </h1>
 
@@ -65,9 +65,8 @@ export default function ContactSection() {
 
           {/* Contact Info */}
           <div className="mt-10 space-y-3 text-gray-400 text-sm">
-            <p>📍 Lahore, Pakistan</p>
             <p>📧 zohaibarshad2237@gmail.com </p>
-            <p>📞 +92 300 1234567</p>
+            <p>📞 +92 323 4424756</p>
           </div>
         </div>
 
