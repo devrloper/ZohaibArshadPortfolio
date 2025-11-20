@@ -70,14 +70,15 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* RIGHT SIDE IMAGE */}
-        <div className="flex justify-center lg:justify-end">
-          <img
-            src="/Contactus.png"
-            alt="Contact Illustration"
-            className="hidden lg:block w-full max-w-2xl h-[580px] rounded-2xl shadow-lg object-cover mt-[-190px]"
-          />
-        </div>
+       {/* /* RIGHT SIDE IMAGE */ }
+<div className="flex justify-center lg:justify-end">
+  <img
+    src="/contact5.png"
+    alt="Contact Illustration"
+    className="hidden lg:block w-full max-w-3xl h-[580px] rounded-2xl object-contain "
+  />
+</div>
+
       </div>
     </section>
   );
