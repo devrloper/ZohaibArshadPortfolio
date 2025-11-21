@@ -55,12 +55,14 @@ export default function ContactSection() {
               ></textarea>
             </div>
 
-            <button
-              type="submit"
-              className="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-lg font-semibold text-white transition cursor-pointer"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbG13p_R0CZw0EJI-4ofo8kpnW4Jng4AZwRKiPmvIaHek31w/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-lg font-semibold text-white transition cursor-pointer inline-block"
             >
               Send Message
-            </button>
+            </a>
           </form>
 
           {/* Contact Info */}
@@ -70,15 +72,14 @@ export default function ContactSection() {
           </div>
         </div>
 
-       {/* /* RIGHT SIDE IMAGE */ }
-<div className="flex justify-center lg:justify-end">
-  <img
-    src="/contact5.png"
-    alt="Contact Illustration"
-    className="hidden lg:block w-full max-w-3xl h-[580px] rounded-2xl object-contain "
-  />
-</div>
-
+        {/* /* RIGHT SIDE IMAGE */}
+        <div className="flex justify-center lg:justify-end">
+          <img
+            src="/contact5.png"
+            alt="Contact Illustration"
+            className="hidden lg:block w-full max-w-3xl h-[580px] rounded-2xl object-contain "
+          />
+        </div>
       </div>
     </section>
   );
