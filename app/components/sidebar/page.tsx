@@ -46,9 +46,12 @@ export default function Sidebar() {
     },
   ];
 
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
     e.preventDefault(); // prevent default jump
-    setIsOpen(false);   // close sidebar on mobile
+    setIsOpen(false); // close sidebar on mobile
 
     const target = document.querySelector(href);
     if (target) {

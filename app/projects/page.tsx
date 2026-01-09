@@ -85,7 +85,25 @@ const projects: Project[] = [
       "A real estate platform enabling users to customize searches for apartments or houses. Advanced filters and user-friendly interfaces provide a seamless and tailored property search experience. Users can easily explore options, compare properties, and make informed decisions about their ideal living space.",
     size: "large",
   },
+   {
+    id: 9,
+    name: "Society for Vascular Surgery",
+    imageinner: "/SVC inner.png",
+    image: "/SVS outer.png",
+    description:"The Vascular Education and Self-Assessment Program (VESAP6) is an online self-study tool developed by the Society for Vascular Surgery (SVS).It offers over 600 multiple-choice questions with detailed explanations and references across vascular surgery and endovascular therapy topics.VESAP6 supports lifelong learning, exam preparation , MOC requirements, and RPVI credentialing. Users can earn up to 102 AMA PRA Category 1 CME credits through comprehensive modules.",
+    size: "medium",
+  },
+ 
+   {
+    id: 10,
+    name: "CAPRA",
+    imageinner: "/capra inner1.png",
+    image: "/capra outer.png",
+    description:"The Vascular Education and Self-Assessment Program (VESAP6) is an online self-study tool developed by the Society for Vascular Surgery (SVS).It offers over 600 multiple-choice questions with detailed explanations and references across vascular surgery and endovascular therapy topics.VESAP6 supports lifelong learning, exam preparation , MOC requirements, and RPVI credentialing. Users can earn up to 102 AMA PRA Category 1 CME credits through comprehensive modules.",
+    size: "medium",
+  },
 ];
+
 
 
 export default function ProjectsSection() {
@@ -172,7 +190,7 @@ export default function ProjectsSection() {
             </h2>
 
             {/* Description */}
-            <p className="text-gray-300 text-sm text-center leading-relaxed">
+            <p className="text-gray-300 text-sm text-justify leading-relaxed ">
               {selectedProject.description}
             </p>
           </div>
