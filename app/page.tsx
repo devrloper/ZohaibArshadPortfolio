@@ -8,7 +8,9 @@ import Image from "next/image";
 import ServicesSection from "./services/page";
 import Project from "./projects/page";
 import Contact from "./contact/page";
-import { Download, Github, MessageCircle, Phone } from "lucide-react";
+import { Download, Github, MessageCircle, Phone ,Linkedin,} from "lucide-react";
+import { SiUpwork } from "react-icons/si";
+import Link from "next/link"
 import {
   IoLogoJavascript,
 
@@ -184,30 +186,30 @@ export default function HomeSection() {
               Download CV
             </button> */}
 
-            <a
+            <Link
               href="https://github.com/ZohaibArshad12/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer inline-flex"
             >
               <Github className="w-5 h-5" />
-            </a>
+            </Link>
 
-            <a
-              href="zohaibarshad2237@gmail.com"
+            <Link
+              href="https://www.upwork.com/freelancers/zohaibarshad19?mp_source=share"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer inline-flex"
             >
-              <MessageCircle className="w-5 h-5" />
-            </a>
+              <SiUpwork className="w-5 h-5" />
+            </Link>
 
-            <a
-              href="tel: +92 323 4424756"
+            <Link
+              href="https://www.linkedin.com/in/zohaib-arshad-83a72613b/"
               className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer inline-flex"
             >
-              <Phone className="w-5 h-5" />
-            </a>
+              <Linkedin className="w-5 h-5" />
+            </Link>
           </div>
         </div>
 
