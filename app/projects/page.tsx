@@ -100,7 +100,7 @@ const projects: Project[] = [
     imageinner: "/capra inner1.png",
     image: "/capra outer.png",
     description:"Capra Inspection is a free iOS app that streamlines truck and trailer inspections, allowing users to record details, capture photos, and submit reports to improve safety and compliance. It supports offline use and real-time reporting for efficient fleet management.",
-    size: "large",
+    size: "medium",
   },
 ];
 
