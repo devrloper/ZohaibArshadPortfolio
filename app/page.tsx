@@ -179,11 +179,6 @@ export default function HomeSection() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mb-10">
-            {/* <button className="flex items-center gap-2 bg-gray-700 hover:bg-green-500 px-5 py-3 rounded-2xl transition cursor-pointer">
-              <Download className="w-5 h-5" />
-              Download CV
-            </button> */}
-
             <Link
               href="https://github.com/ZohaibArshad12/"
               target="_blank"
