@@ -8,20 +8,18 @@ import Image from "next/image";
 import ServicesSection from "./services/page";
 import Project from "./projects/page";
 import Contact from "./contact/page";
-import { Download, Github, MessageCircle, Phone ,Linkedin,} from "lucide-react";
+import { Download, Github, MessageCircle, Phone, Linkedin } from "lucide-react";
 import { SiUpwork } from "react-icons/si";
-import Link from "next/link"
+import Link from "next/link";
 import {
   IoLogoJavascript,
-
   IoLogoReact,
   IoLogoNodejs,
   IoLogoVue,
   IoCloudOutline,
   IoServerOutline,
 } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si"; 
-
+import { SiTypescript } from "react-icons/si";
 
 export default function HomeSection() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -95,7 +93,7 @@ export default function HomeSection() {
       title: "JavaScript",
       icon: IoLogoJavascript,
     },
-    { title: "TypeScript", icon: SiTypescript  },
+    { title: "TypeScript", icon: SiTypescript },
     { title: "React / NextJS", icon: IoLogoReact },
     { title: "Vue / Nuxt", icon: IoLogoVue },
     { title: "Cloud Services", icon: IoCloudOutline },
@@ -181,11 +179,6 @@ export default function HomeSection() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 mb-10">
-            {/* <button className="flex items-center gap-2 bg-gray-700 hover:bg-green-500 px-5 py-3 rounded-2xl transition cursor-pointer">
-              <Download className="w-5 h-5" />
-              Download CV
-            </button> */}
-
             <Link
               href="https://github.com/ZohaibArshad12/"
               target="_blank"
@@ -206,6 +199,8 @@ export default function HomeSection() {
 
             <Link
               href="https://www.linkedin.com/in/zohaib-arshad-83a72613b/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gray-700 hover:bg-green-500 p-3 rounded-full cursor-pointer inline-flex"
             >
               <Linkedin className="w-5 h-5" />
