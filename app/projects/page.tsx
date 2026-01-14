@@ -99,8 +99,8 @@ const projects: Project[] = [
     name: "CAPRA",
     imageinner: "/capra inner1.png",
     image: "/capra outer.png",
-    description:"The Vascular Education and Self-Assessment Program (VESAP6) is an online self-study tool developed by the Society for Vascular Surgery (SVS).It offers over 600 multiple-choice questions with detailed explanations and references across vascular surgery and endovascular therapy topics.VESAP6 supports lifelong learning, exam preparation , MOC requirements, and RPVI credentialing. Users can earn up to 102 AMA PRA Category 1 CME credits through comprehensive modules.",
-    size: "medium",
+    description:"Capra Inspection is a free iOS app that streamlines truck and trailer inspections, allowing users to record details, capture photos, and submit reports to improve safety and compliance. It supports offline use and real-time reporting for efficient fleet management.",
+    size: "large",
   },
 ];
 
