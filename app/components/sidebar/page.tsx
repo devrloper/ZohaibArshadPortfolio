@@ -13,6 +13,7 @@ import {
   Menu,
   X,
   Cpu,
+  Linkedin,
 } from "lucide-react";
 import { SiUpwork } from "react-icons/si";
 
@@ -40,8 +41,8 @@ export default function Sidebar() {
       label: "Upwork",
     },
     {
-      href: "mailto:zohaibarshad2237@gmail.com",
-      icon: <Mail size={20} />,
+      href: "https://www.linkedin.com/in/zohaib-arshad-83a72613b/",
+      icon: <Linkedin size={20} />,
       label: "Email",
     },
   ];
